@@ -54,7 +54,7 @@ Validation on **Claude Sonnet 4.5** (January 2026):
 ### Installation
 
 ```bash
-git clone [https://github.com/yourusername/anexa-ultra.git](https://github.com/Leesintheblindmonk1999/Durante-Invariance-Metric)
+git clone [https://github.com/Leesintheblindmonk1999/Durante-Invariance-Metric]
 pip install -r requirements.txt
 ```
 
