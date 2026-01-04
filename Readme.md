@@ -54,33 +54,8 @@ Validation on **Claude Sonnet 4.5** (January 2026):
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/anexa-ultra.git
-cd anexa-ultra
+git clone [https://github.com/yourusername/anexa-ultra.git](https://github.com/Leesintheblindmonk1999/Durante-Invariance-Metric)
 pip install -r requirements.txt
-```
-
-### Basic Usage
-
-```python
-from anexa import OriginNode, InvarianceMonitor
-from sentence_transformers import SentenceTransformer
-
-# 1. Initialize embedding model
-model = SentenceTransformer('all-MiniLM-L6-v2')
-
-# 2. Create Origin Node from reference text
-genesis_text = "Your reference principles here..."
-origin = OriginNode(genesis_text, model)
-
-# 3. Monitor system responses
-monitor = InvarianceMonitor(origin)
-
-# 4. Evaluate a response
-response = "System output to evaluate..."
-i_d_score = monitor.compute_invariance(response)
-
-print(f"I_D Score: {i_d_score:.4f}")
-print(f"Status: {monitor.classify(i_d_score)}")
 ```
 
 ### Full Validation Protocol
